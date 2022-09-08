@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view"
+        android:layout_gravity="center"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_love2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/love2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/roundbutton"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_add"
+        android:text="Add to cart"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/add_cart"/>
+
+</RelativeLayout>
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_love3"
+        android:id="@+id/love3"/>
+
+
+    <RelativeLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width= "match_parent"
+            android:id = "@+id/ad_delivery"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:gravity="left"
+
+            ></TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width= "match_parent"
+            android:id = "@+id/ad_stock"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            ></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text = "SHOP PAGE"
+            android:id = "@+id/ishop"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text = "BUY NOW"
+            android:id = "@+id/iorder"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundbutton"
+        android:id="@+id/order_layout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Choose an address for delivery"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbutton"
+            android:text="Current location address"
+            android:id="@+id/location_current"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbutton"
+            android:text="Last delivery address"
+            android:id="@+id/location_last"/>
+
+        <EditText
+            android:id="@+id/ettt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Write about your store"
+            android:layout_margin="5dp"
+            android:background="#ffb6c1"
+            android:layout_below="@+id/et"
+            android:layout_marginTop="30dp"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:maxLines="5"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text = "Place Order"
+            android:id = "@+id/iorder1"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ititle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/iprice"
+        android:typeface="serif"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idescription"
+        android:textColor="#737078"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+
+</LinearLayout>
+</ScrollView>

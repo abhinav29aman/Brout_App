@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:text="ORDER CART"
+        android:id="@+id/order_cart"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundbutton"
+        android:id="@+id/order_layout1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Choose an address for delivery"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbutton"
+            android:text="Current location address"
+            android:id="@+id/location_current1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbutton"
+            android:text="Last delivery address"
+            android:id="@+id/location_last1"/>
+
+        <EditText
+            android:id="@+id/ettt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Write about your store"
+            android:layout_margin="5dp"
+            android:background="#ffb6c1"
+            android:layout_marginTop="30dp"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:maxLines="5"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text = "Place Order"
+            android:id = "@+id/iorder11"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/custom_layout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:weightSum="100"
+        android:id="@+id/fill_item"
+        >
+
+        <EditText
+            android:id="@+id/write_item"
+            android:layout_width="0dp"
+            android:layout_weight="87"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Write a list item"
+            android:fontFamily="sans-serif-condensed"
+            android:background="#ffb6c1"
+            android:minLines="1"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="13"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbutton"
+            android:text="Add"
+            android:id="@+id/add_item"/>
+
+    </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/roundbutton"
+            android:text="SEND LIST"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/send_list"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview1"
+        >
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

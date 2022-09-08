@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "317331968414",
+    "firebase_url": "https://comestore-340b1.firebaseio.com",
+    "project_id": "comestore-340b1",
+    "storage_bucket": "comestore-340b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317331968414:android:94a736663363c71ecfc68f",
+        "android_client_info": {
+          "package_name": "com.adarshaaman.comestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317331968414-v506g9ph2f3p52pb6rjqf6aftevq3ttj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adarshaaman.comestore",
+            "certificate_hash": "d9ad133c727478c073c5724bfa6d43859b2a5a63"
+          }
+        },
+        {
+          "client_id": "317331968414-bge91nocl0f2ataqv1vf8qor9jd5ungl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_4mPHY-sS24MMFsXJcVlklX5N3RlfSMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317331968414-bge91nocl0f2ataqv1vf8qor9jd5ungl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

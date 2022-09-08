@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius = "10dp"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+
+     <LinearLayout
+         android:layout_weight="95"
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <RelativeLayout
+             android:layout_height="15dp"
+             android:layout_width="match_parent">
+             <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:id = "@+id/order_code"
+                 android:textColor="#737078"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="3dp"
+                 android:text="Code : 1234"
+                 android:textSize="10sp"
+                 android:layout_alignParentBottom="true"
+                 android:gravity="left"
+
+                 ></TextView>
+             <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width= "match_parent"
+                 android:id = "@+id/order_status"
+                 android:layout_marginRight="20dp"
+                 android:textColor="#737078"
+                 android:textSize="10sp"
+                 android:text="Ordered"
+                 android:layout_alignParentBottom="true"
+                 android:gravity="right"
+                 ></TextView>
+         </RelativeLayout>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width= "match_parent"
+            android:id = "@+id/order_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Title here"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            ></TextView>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             android:weightSum="90"
+             android:paddingBottom="4dp"
+             android:layout_marginTop="4dp">
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="30"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:id = "@+id/order_quantity"
+                     android:textColor="#737078"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:text="Qty : 2"
+                     android:textSize="11sp"></TextView>
+
+
+                 <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:id = "@+id/order_price"
+                     android:textColor="#000"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:layout_marginTop="3dp"
+                     android:text="Rs 1200"
+                     android:textSize="14sp"></TextView>
+             </LinearLayout>
+             <FrameLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="30">
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:background="@drawable/roundbutton"
+                 android:id="@+id/call_rider"
+                 android:text="Call RIDER"/> </FrameLayout>
+             <FrameLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="30">
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:id="@+id/call_shop"
+                     android:background="@drawable/roundbutton"
+                     android:text="Call SHOP"/> </FrameLayout>
+         </LinearLayout>
+
+
+
+
+     </LinearLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:id="@+id/statuscode"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width= "match_parent"
+            android:id = "@+id/shopname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Title here"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            ></TextView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:id="@+id/riderdirection">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_direction"
+                android:text="Shop"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/roundbutton"
+                android:padding="5dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/shop_direction"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_direction"
+                android:text="Customer"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/roundbutton"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/user_direction"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rider_status"
+            android:layout_margin="2dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipped"
+                android:id="@+id/shipped"
+                android:layout_marginLeft="10dp"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered"
+                android:id="@+id/delivered"
+                android:layout_marginLeft="10dp"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Returned"
+                android:id="@+id/returned"
+                android:layout_marginLeft="10dp"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

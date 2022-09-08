@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/main_tab"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/cart_view"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have selected items in your cart"
+            android:layout_margin="5dp"
+           android:textAlignment="center"
+            android:textColor="#000"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ovalbutton"
+                android:text="Clear cart"
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:backgroundTint="#fff"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/clear_cart"/>
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="34dp"
+                android:background="@drawable/ovalbutton"
+                android:text="Continue"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="30dp"
+                android:id="@+id/continue_cart"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:id="@+id/homeViewPager"
+
+        />
+
+</LinearLayout>

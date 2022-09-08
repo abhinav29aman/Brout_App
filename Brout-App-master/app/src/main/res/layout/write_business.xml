@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:paddingTop="40dp">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Store name"
+        android:id= "@+id/store_name"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Category"
+        android:id= "@+id/store_category"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/ic_attach"
+        android:id = "@+id/shop_photo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text ="Add store image"/>
+
+</LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Address Line 1"
+        android:id= "@+id/store_addressLine1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Address Line 2"
+        android:id= "@+id/store_addressLine2"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text = "UPLOAD STORE"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id = "@+id/post_store"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginTop="10dp"
+        android:text="ADD SHOP'S MAP LOCATION"
+        android:id="@+id/shop_location"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Title"
+        android:id= "@+id/item_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Description line 1"
+        android:id= "@+id/item_description1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Description line 2"
+        android:id= "@+id/item_description2"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Description line 3"
+        android:id= "@+id/item_description3"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Inventory Price"
+        android:id= "@+id/item_price"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/ic_attach"
+            android:id = "@+id/inventory_photo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text ="Add inventory image"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/radiogroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noreturn"
+            android:text="No return"
+            android:layout_marginLeft="10dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkandbuy"
+            android:layout_marginLeft="10dp"
+            android:text="Try and buy"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/onedayreturn"
+            android:text="One Day Return"
+            android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="In stock"
+        android:layout_marginTop="10dp"
+        android:id="@+id/instock"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Is Service"
+        android:layout_marginTop="10dp"
+        android:id="@+id/isService"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text = "UPLOAD ITEM"
+        android:id = "@+id/post_item"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text = "UPLOAD AD"
+            android:id = "@+id/post_ad"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:background="#ffb6c1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Add Shop Images"
+        android:textSize="20sp"
+        android:textColor="#000000 "
+        android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:src= "@drawable/ic_attach"
+            android:layout_gravity="center"
+            android:id ="@+id/add_shop_images"
+            />
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="EXTRA DETAILS"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Write about the operating hours"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#ffb6c1"
+        android:minLines="1"
+        android:maxLines="3"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Write about your store"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_below="@+id/et"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:maxLines="10"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="POST DETAILS"
+        android:id="@+id/detail_button"
+        android:layout_marginBottom="30dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</LinearLayout>
+</ScrollView>
